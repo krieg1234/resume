@@ -1,0 +1,123 @@
+@font-face {
+}
+
+.reg() {
+  font-weight: 400;
+}
+
+.bold() {
+  font-weight: 900;
+}
+
+/*Colors*/
+@bg-color: white;
+@secondary-color: gray;
+@text: black;
+@icon-color: orange;
+@btn-color: blue;
+
+body {
+  background: url('../pictures/background.jpeg') center no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  background: @secondary-color;
+  a {
+    color: white;
+  }
+}
+
+main {
+  section {
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+  .container-fluid {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+  }
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  h2 {
+    margin-bottom: 30px;
+  }
+  .home {
+    background: url('../pictures/home_bg.jpg') bottom no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -10;
+    .greetings {
+      h2,
+      h4,
+      p {
+        background-color: white;
+      }
+    }
+    .next-page-btn {
+      position: absolute;
+      bottom: 30px;
+      left: 50vw;
+
+      svg {
+        color: white;
+        transition: all 1s;
+        &:hover {
+          color: lighten(gray, 25%);
+          transform: scale(1.5);
+          z-index: 5;
+        }
+        &:focus {
+          border: none;
+        }
+        &:target {
+          border: none;
+        }
+      }
+    }
+  }
+  .about {
+    .card {
+      border: none;
+      margin-bottom: 20px;
+    }
+    .about-block {
+      position: relative;
+      min-height: 70vh;
+      margin: 10px;
+
+      padding: 20px;
+      border: 1px solid gray;
+      border-radius: 10px;
+      z-index: 0;
+      background: gray;
+      transition: all 1s;
+      &:hover {
+        background: lighten(gray, 25%);
+        transform: scale(1.1);
+        z-index: 5;
+      }
+      .btn {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .content {
+    margin-top: 100vh;
+  }
+}
+
+footer {
+  background: @secondary-color;
+}

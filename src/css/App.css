@@ -1,0 +1,104 @@
+@font-face {
+  
+}
+/*Colors*/
+body {
+  background: url('../pictures/background.jpeg') center no-repeat;
+  background-size: cover;
+}
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  background: #808080;
+}
+header a {
+  color: white;
+}
+main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main section {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+main .container-fluid {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+main h2 {
+  margin-bottom: 30px;
+}
+main .home {
+  background: url('../pictures/home_bg.jpg') bottom no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+}
+main .home .greetings h2,
+main .home .greetings h4,
+main .home .greetings p {
+  background-color: white;
+}
+main .home .next-page-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50vw;
+}
+main .home .next-page-btn svg {
+  color: white;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+main .home .next-page-btn svg:hover {
+  color: #c0c0c0;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 5;
+}
+main .home .next-page-btn svg:focus {
+  border: none;
+}
+main .home .next-page-btn svg:target {
+  border: none;
+}
+main .about .card {
+  border: none;
+  margin-bottom: 20px;
+}
+main .about .about-block {
+  position: relative;
+  min-height: 70vh;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  z-index: 0;
+  background: gray;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+main .about .about-block:hover {
+  background: #c0c0c0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 5;
+}
+main .about .about-block .btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+main .content {
+  margin-top: 100vh;
+}
+footer {
+  background: #808080;
+}
